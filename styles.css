@@ -1,0 +1,97 @@
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6; /* Light grey background */
+}
+
+/* Splash container styles */
+.splash-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* White background for splash */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #1b3b6f; /* Dark blue */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #d1e1f1; /* Light blue for text */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #2a5298; /* Slightly lighter blue for hover */
+  color: white;
+}
+
+/* Main content styles */
+.container {
+  padding-top: 50px; /* Adjust based on navbar height */
+}
+
+.main-content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Dark grey */
+}
+
+/* About Me section styles */
+.section {
+  border: 1px solid #bdc3c7; /* Grey border */
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: #ecf0f1; /* Light grey background */
+}
+
+.section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+img {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}

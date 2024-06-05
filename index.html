@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn about me and the services I offer.">
+  <meta name="keywords" content="business, services, company, professional, web design, developer, cohort, stiegler edtech">
+  <meta name="author" content="Gregg Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gregg the Dev</title>
+</head>
+<body>
+  <style>
+    .splash-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <div id="splash" class="splash-container">
+    <!-- Splash Page text -->
+    <h1>Welcome to My Website</h1>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        document.getElementById('splash').classList.add('hidden');
+      }, 3000); // Hide splash after 3 seconds
+    });
+  </script>
+  
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#index.html">Home</a>
+    <a href="#projects.html">Projects</a>
+    <a href="#interests.html">Interests</a>
+       </div>
+       <!-- About Me -->
+       <div class="container">
+        <div class="main-content">
+            <h1>A little bit about me</h1>
+
+            <div class="section" id="About Me">
+                <h2>About Me</h2>
+               
+                <g alt="Handsome Man style="float: right; margin-left: 20px;"> <p>Hi,<br>
+
+I'm Gregg the Dev, full-stack web developer, currently enrolled in the <b>Cohort</b> program with <a href="https://stiegleredtech.org">Stiegler Edtech<a/>. I specialize in crafting robust, scalable and dynamic web solutions for clients across various sectors including Charity, Retail, Education, Real Estate, and more. As a full-stack web developer, I handle <b>all</b> aspects of website development from conceptualization to lauch. And my time with tech giants like <a href="https://apple.com">Apple</a> and <a href="https://verizon.com">Verizon<a/> have imparted upon me a strong focus on the end-user experience and an eye for detail.</p> 
+
+
+  <p>Whether it's devloping responsive front-end interfaces or engineering powerful back-end systems, I ensure every piec eof code is written with precision and purpose.</p>
+  <h3>My Skills</h3>
+
+    <b>Front-End Development:</b> Expertise in HTML5, CSS3, JavaScript (ES6+), and frameworks Figma.<br>
+    <b>Back-End Development:</b> Proficient in Node.js, Express.js, and working with databases such as MongoDB and PostgreSQL.<br>
+    <b>Project Management:</b> Experience with Jira and CI/CD pipelines to streamline development and deployment processes.<br>
+    <b>Version Control:</b> Adept at using Git for version control and GitHub for repository hosting and collaboration.
+</div>
+</body>
+</html>
